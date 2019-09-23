@@ -42,6 +42,24 @@ func random
 
 ## Reuse functions and variables via sourcing
 
+There is several options how to reuse code in shell:
+
+1. To access variable in other shell script, use `export`. By default other scripts cannot change value of variable because they spawn own interactive shells.
+2. Run script in subshell using `.` command. In this case shell can change values of variables declared outside.
+
+Example:
+
+```bash
+#!/bin/sh
+VAR=5
+# Assume that script.sh changes VAR to 10
+. ./script.sh
+# Prints 10
+echo $VAR
+```
+
+3. Extract common code to separate file.
+
 Example:
 
 ```bash

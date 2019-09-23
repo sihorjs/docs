@@ -14,22 +14,6 @@ VARIABLE="Some value"
 echo $VARIABLE
 ```
 
-## Accessing of variables in other parts of program
-
--   To access variable in other shell script, use `export`. After its running variable left unchanged.
--   Every script spawns own interactive shell. To run script inside current environment use `.` command. In this case shell can change values created variables outside it.
-
-Example:
-
-```bash
-#!/bin/sh
-VAR=5
-# Assume that script.sh changes VAR to 10
-. ./script.sh
-# Prints 10
-echo $VAR
-```
-
 ## Default values
 
 To assign default value to variable use `:=` or `:-` operator.
