@@ -30,6 +30,18 @@ VAR=5
 echo $VAR
 ```
 
+## Default values
+
+To assign default value to variable use `:=` or `:-` operator.
+
+Example:
+
+```bash
+#!/bin/sh
+read VAR
+echo "${VAR:=Default value}"
+```
+
 ## Escaping variables
 
 Variables can be escaped with backticks and curly brackets - `${VAR}`.

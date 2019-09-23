@@ -2,6 +2,8 @@
 
 Shell script begins with comment `#!/bin/sh`.
 
+External programs can be executed in backticks. They run in subshell and don't affect parent shell.
+
 ## CLI arguments
 
 -   `$0` - basename of shell script.
