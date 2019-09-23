@@ -3,7 +3,7 @@
 ## For loop
 
 ```shell
-#!bin/sh
+#!/bin/sh
 for i in 1 2 3 4 5 # or any list of values without comma
 do
   # body of loop
@@ -20,7 +20,7 @@ Conditions:
 -   `` while i=`line` ``
 
 ```shell
-#!bin/sh
+#!/bin/sh
 while condition
 do
     # body of loop
@@ -30,7 +30,7 @@ done
 ## If-else block
 
 ```shell
-#!bin/sh
+#!/bin/sh
 if condition
 then
     # if-block body
@@ -44,7 +44,7 @@ fi
 ## Case
 
 ```shell
-#!bin/sh
+#!/bin/sh
 case value in
     a)
         # body a
