@@ -10,10 +10,53 @@ External programs can be executed in backticks. They run in subshell and don't a
 -   `$@` - arguments of program.
 -   `$1, $2, $3` - first three parameters. Can use up to 9 arguments.
 -   `$#` - number of arguments.
+-   `$$` - PID of current shell.
+-   `$?` - exit code of last COMMAND (including if-block etc).
 
 ## Escaping characters
 
 -   `` ", `, \, $ `` are not escaped without backslash `\`.
+
+## Functions
+
+-   There is only global scope of functions.
+-   Can be recursive.
+-   Cannot modify own arguments ($1, $2 etc), but can change global variables.
+
+Example:
+
+```bash
+#!/bin/sh
+VARIABLE=value
+
+func()
+{
+    # body of function processing value
+    $VARIABLE=$1
+    return $VARIABLE
+}
+
+# Calling
+func random
+```
+
+## Reuse functions and variables via sourcing
+
+Example:
+
+```bash
+# common.lib - file with common functions that doesn't spawn new shell
+
+# common.lib
+# body of common.lib
+
+# script.sh - Consumer of common.lib
+
+#!/bin/sh
+# script.sh
+. ./common.lib
+# body of script.sh
+```
 
 ## Built-in commands
 
