@@ -49,9 +49,8 @@ case value in
     a)
         # body a
         ;;
-    b)
-        # body b
-        break
+    b|c)
+        # if value equals b or c
         ;;
     *)
         # default case
