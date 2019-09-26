@@ -102,3 +102,14 @@ Example:
 ### For strings:
 
 -   `-n` - non-zero length string.
+
+## Arithmetic operations
+
+Arithmetic operations are performed in format `$(( expression ))`.
+
+Example:
+
+```bash
+#!/bin/sh
+VAR=$((1+1))
+```
