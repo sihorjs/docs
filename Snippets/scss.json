@@ -1,0 +1,14 @@
+{
+    "element": {
+        "prefix": "__",
+        "body": ["&__$1 {", "$0", "}"]
+    },
+    "modifier": {
+        "prefix": "_",
+        "body": ["&_$1 {", "$0", "}"]
+    },
+    "pseudoElement": {
+        "prefix": "::",
+        "body": ["&::{1|before,after|} {", "\t$0", "}"]
+    }
+}
