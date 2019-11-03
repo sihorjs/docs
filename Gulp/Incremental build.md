@@ -13,7 +13,7 @@ gulp.task(
 );
 ```
 
-2. `gulp-newer`. This plugins compares dates of modification source and output files. If file was modified later, source files won't be processed in stream.
+2. `gulp-newer`. This plugins compares dates of modification source and output files. If output was modified later, source files won't be processed in stream.
 
 3. `gulp-remember`. Caches result of operation.
 
