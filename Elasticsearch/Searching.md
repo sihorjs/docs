@@ -4,7 +4,7 @@
 
 ### API
 
-Endpoint -GET /index/\_search
+Endpoint - GET /index/\_search
 
 Usage:
 
@@ -35,6 +35,9 @@ q=+key:value+key:value
 **N-grams**. Edge n-grams are built from beginning of each term.
 
 To **sort** analyzed text field make keyword copy in mappings.
+
+**Exact-match search** uses keyword mappings.
+**Partial-match search** uses data handled by analyzers.
 
 ### Search request params:
 
@@ -80,7 +83,7 @@ To **sort** analyzed text field make keyword copy in mappings.
         "bool": {
             "must": {
                 "term": {
-                    "title": "Star wars"
+                    "title": "your search input"
                 },
                 "filter": {
                     "range": {
