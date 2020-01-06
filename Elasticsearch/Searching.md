@@ -74,8 +74,6 @@ To **sort** analyzed text field make keyword copy in mappings.
 
 ## Example
 
-/index?q=title:star wars+year>1980
-
 ```json
 {
     "query": {
