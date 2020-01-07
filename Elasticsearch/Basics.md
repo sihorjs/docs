@@ -2,15 +2,15 @@
 
 ## API
 
-| Address                | Method | Description              | Has body |
-| ---------------------- | ------ | ------------------------ | -------- |
-| /                      | PUT    | Mappings                 | y        |
-| /\_doc                 | PUT    | Add new document         | y        |
-| /\_doc/doc_id          | GET    | Get document             | n        |
-| /\_doc/doc_id/\_update | POST   | Update existing document | y        |
-| /\_doc/doc_id          | DELETE | Delete document          | n        |
-| /\_bulk                | PUT    | Bulk import              | y        |
-| /\_search              | GET    | Search documents         | y        |
+| Address                | Method | Description                    | Has body |
+| ---------------------- | ------ | ------------------------------ | -------- |
+| /                      | PUT    | Mappings                       | y        |
+| /\_doc                 | PUT    | Add new document               | y        |
+| /\_doc/doc_id          | GET    | Get document                   | n        |
+| /\_doc/doc_id          | DELETE | Delete document                | n        |
+| /\_doc/doc_id/\_update | POST   | Update existing document       | y        |
+| /\_bulk                | PUT    | Bulk import                    | y        |
+| /\_search              | GET    | Search and aggregate documents | y        |
 
 ## Concepts
 
