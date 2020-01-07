@@ -75,7 +75,13 @@ To **sort** analyzed text field make keyword copy in mappings.
 -   1 for 3-5 characters.
 -   2 for > 5 characters.
 
-## Example
+## Aggregation
+
+Aggregation can be combined with query. To retrieve only aggregation results set `size=0` in querystring. Aggregations can be nested.
+
+## Examples
+
+1. Query combined with filter
 
 ```json
 {
@@ -92,6 +98,32 @@ To **sort** analyzed text field make keyword copy in mappings.
                         }
                     }
                 }
+            }
+        }
+    }
+}
+```
+
+2. Aggregation
+
+```json
+{
+    "aggs": {
+        "agg_name": {
+            // List of possible aggregations
+            "terms": {
+                "field": "field_name"
+            },
+            "avg": {
+                "field": "field_name"
+            },
+            "histogram": {
+                "field": "field_name",
+                "interval": "interval"
+            },
+            "date_histogram": {
+                "field": "field_name",
+                "interval": "hour"
             }
         }
     }
