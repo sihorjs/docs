@@ -1,6 +1,6 @@
 #!/bin/bash
 
-read -p 'Enter component name: ' COMPONENT_NAME
+read -p "Enter component name: " COMPONENT_NAME
 
 declare -a COMPONENT_FILES=("index.js" "$COMPONENT_NAME.js" "${COMPONENT_NAME}Container.js" "$COMPONENT_NAME.scss")
 COMPONENTS_DIR="$PWD/components"
