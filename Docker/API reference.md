@@ -1,4 +1,4 @@
-# Containers
+# API reference
 
 ## Run
 
@@ -8,7 +8,6 @@
 -   `docker container ls`.
 -   `docker container logs <container_id>`.
 -   `docker container rm <container_id>`.
--   `docker image ls`.
 -   `docker container exec <container> <command> <arguments>` - run command in created container. Use `-it` for running command.
 
 ### Options of run command
@@ -19,6 +18,11 @@
 -   `--detach` - run in background mode.
 -   `--env` or `-e`.
 -   `--rm` - automatically remove container after exit.
+
+## Images
+
+-   `docker image ls`.
+-   `docker image rm`.
 
 ## Networks
 
