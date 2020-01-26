@@ -16,8 +16,9 @@
 -   `--publish <host_port>:<container_port>` or `-p`.
 -   `--network <name>`.
 -   `--detach` - run in background mode.
--   `--env` or `-e`.
+-   `--env` or `-e <KEY=VALUE>`.
 -   `--rm` - automatically remove container after exit.
+-   `-v <path|volume_name|<volume_name:path|host_folder_path:container_file_path>` - attach volume
 
 ## Images
 
@@ -31,3 +32,8 @@
 -   `docker network create <network> --driver <driver>`. Default docker virtual network is `docker0` or `bridge`.
 -   `docker network connect <network> <container>` - attach network to container.
 -   `docker network disconnect <network> <container>`.
+
+## Volumes
+
+-   `docker volume inspect`.
+-   `docker volume create` - create volume before container run.

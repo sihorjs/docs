@@ -4,6 +4,7 @@
 
 -   `FROM` - base image.
 -   `EXPOSE` - port that is listened by container.
+-   `VOLUME` - path to directory in container with persistent data.
 -   `CMD`.
 
 ## Running
