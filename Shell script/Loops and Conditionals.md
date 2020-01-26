@@ -2,7 +2,7 @@
 
 ## For loop
 
-```shell
+```bash
 #!/bin/sh
 for i in 1 2 3 4 5 # or any list of values without comma
 do
@@ -19,7 +19,7 @@ Conditions:
 -   `while read VAR`
 -   `` while i=`line` ``
 
-```shell
+```bash
 #!/bin/sh
 while condition
 do
@@ -29,7 +29,7 @@ done
 
 ## If-else block
 
-```shell
+```bash
 #!/bin/sh
 if condition
 then
@@ -43,7 +43,7 @@ fi
 
 ## Case
 
-```shell
+```bash
 #!/bin/sh
 case value in
     a)
