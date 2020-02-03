@@ -1,6 +1,6 @@
 # Shell script
 
-Shell script begins with comment `#!/bin/sh`.
+Shell script starts with shebang `#!/bin/sh`.
 
 External programs can be executed in backticks. They run in subshell and don't affect parent shell.
 
