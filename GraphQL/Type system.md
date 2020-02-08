@@ -39,30 +39,12 @@ There types are entry point of app.
 -   `__schema`.
 -   `__type`.
 -   `__typeKind`.
-
-### Meta fields
-
 -   `__typename` returns name of data type.
 
 ## Directives
 
 -   `@include(if: Boolean)`.
 -   `@skip(if: Boolean)`.
-
-## Resolvers
-
-Signature
-
-```js
-fieldName: (parent, args, context, info) => data;
-```
-
-Arguments of resolver
-
--   `parent`. An object that contains the result returned from the resolver on the parent type.
--   `args`. An object that contains the arguments passed to the field.
--   `context`. An object shared by all resolvers in a GraphQL operation.
--   `info`. Information about the execution state of the operation.
 
 ## Examples
 
