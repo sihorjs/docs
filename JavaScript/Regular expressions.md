@@ -34,7 +34,10 @@
 
 ## Set and range
 
-Set is list of characters - `[abc]`. Excluding sets is preceded by caret - `[^abc]`.
+Set is list of characters - `[abc]`.
+
+Excluding sets is preceded by caret - `[^abc]`.
+
 Range is pre-defined list of characters.
 
 ### Escaping in ranges
@@ -69,6 +72,17 @@ Capturing group `(...)` allows to extract match to separate array. Quantifiers i
 
 `String.prototype.match` without `g` flag return array: [wholeMatch, matchGroup1, matchGroup2, ...].
 
+## Lookahead and lookbehind checks
+
+| Name                | Syntax  | Description               |
+| ------------------- | ------- | ------------------------- |
+| Positive lookahead  | X(?=Y)  | Find X if Y is after      |
+| Negative lookahead  | X(?!Y)  | Find X if Y is not after  |
+| Positive lookbehind | (?<=Y)X | Find X if Y is before     |
+| Negative lookbehind | (?<!Y)X | Find X if Y is not before |
+
+Pattern of checks is not included by default until it's not wrapped in parentheses.
+
 ### Examples
 
 ```js
@@ -83,12 +97,4 @@ const excludeMatchFromRegExp = /(?:[a-z])/;
 
 // Swap match of capturing groups
 string.replace(/(a) (z)/, "$2 $1");
-```
-
-## Examples
-
-```js
-const HTMLCommentPattern = /<!-{2,}.*?-{2,}>/gs;
-const HTMLTagPattern = /<[^<>]+>/;
-const hexRegExp = /#([0-9a-f]{3}){1,2}\b/gi;
 ```
