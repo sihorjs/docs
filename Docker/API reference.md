@@ -37,3 +37,9 @@
 
 -   `docker volume inspect`.
 -   `docker volume create` - create volume before container run.
+
+## Docker-compose
+
+-   `docker-compose up`.
+-   `docker-compose down`.
+-   `docker-compose build` - rebuild image.
