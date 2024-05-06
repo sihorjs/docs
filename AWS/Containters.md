@@ -12,7 +12,7 @@ It's recommended to use EFS for storage. S3 cannot be mounted as a file system.
 
 ## Scaling
 
-ECS uses **AWS application auto scaling**
+ECS uses **AWS application auto scaling**.
 
 ### Scaling metrics:
 

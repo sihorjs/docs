@@ -63,7 +63,7 @@ During **hibernate** RAM is dumped on encrypted root EBS volume
 
 ## Storages
 
-### **EBS drive** (Elastic block store)- network drive
+### **EBS drive** (Elastic block store) - network drive
 
 - one instance per one EC2
 - bound to AZ
